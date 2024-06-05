@@ -1,4 +1,4 @@
-My Portfolio 🚀
+#My Portfolio 🚀
 
 Welcome to my vibrant portfolio website built with React.js! Explore my projects, learn about my skills, and get in touch with me.
 
@@ -8,6 +8,8 @@ This portfolio showcases my projects, skills, and experience in web development.
 Live Demo
 
 🌐 View Live Demo - https://chanuka.vercel.app/
+
+
 Technologies Used
 
     Frontend: React.js, CSS
