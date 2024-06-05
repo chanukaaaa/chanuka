@@ -1,0 +1,109 @@
+/* Container for the projects page */
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header styles */
+  .projects-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Description paragraph styles */
+  .projects-container p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  /* Project cards container with Flexbox */
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Project card container */
+  .project-card {
+    flex: 1 1 calc(33.333% - 30px); /* 3 cards per row with margin */
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjust card size for smaller screens */
+  @media (max-width: 992px) {
+    .project-card {
+      flex: 1 1 calc(50% - 30px); /* 2 cards per row with margin */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .project-card {
+      flex: 1 1 calc(100% - 30px); /* 1 card per row with margin */
+    }
+  }
+  
+  /* Project image */
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Project details */
+  .project-card .project-details {
+    padding: 15px;
+    background-color: #fff;
+  }
+  
+  /* Project title */
+  .project-card .project-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Project description */
+  .project-card .project-details p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  /* Project links (GitHub, Website) */
+  .project-card .project-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .project-card .project-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button styles */
+  .project-card .project-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-card .project-button:hover {
+    background-color: #0056b3;
+  }
+  

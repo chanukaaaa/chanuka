@@ -1,0 +1,49 @@
+#hero {
+    background-color: #ffffff; /* Blue */
+    color: #000000; /* White */
+    padding: 3rem 0; /* Add padding to the top and bottom */
+    text-align: center; 
+    padding-top: 150px; /* Add padding to the top */
+    width: 100vw; /* Make the section fit the width of the viewport */
+  }
+  
+  @media (max-width: 768px) {
+    #hero {
+      padding-top: 100px; /* Reduce top padding for smaller screens */
+    }
+  }
+  
+  
+  
+  .profile-image {
+    width: 150px;
+    border-radius: 50%;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+  
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .content-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem; /* Add margin to separate content */
+  }
+  
+  .content-text h2 {
+    margin-bottom: 0.5rem; /* Add spacing between headings */
+  }
+  
+  .content-text p {
+    font-size: 1rem; /* Increase font size for better readability */
+  }
+  .btn-connect {
+    border-radius: 25px;
+  }
+  

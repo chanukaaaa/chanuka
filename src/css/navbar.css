@@ -1,0 +1,87 @@
+/* Navbar.css */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 5px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+}
+
+.menu {
+  flex: 2;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.theme-switch {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.toggle-icons {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo-image {
+  width: 50px;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .nav-menu.active li {
+    margin: 10px;
+  }
+}

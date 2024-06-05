@@ -1,0 +1,41 @@
+/* project1.css */
+
+.card {
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .card .project-info {
+    margin-top: 1rem;
+  }
+  
+  .card .project-info h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .buttons1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .buttons1 button {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .buttons1 button:hover {
+    background-color: #333333;
+  }
+  
