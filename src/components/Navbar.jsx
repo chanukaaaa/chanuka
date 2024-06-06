@@ -78,7 +78,7 @@ const Navbar = () => {
             <li>
               <a
                 className="nav-link btn btn-primary"
-                href="https://github.com/CommunityPro/portfolio-html"
+                href="https://github.com/chanukaaaa"
                 target="_blank"
                 rel="noopener noreferrer"
               >
