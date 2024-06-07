@@ -1,9 +1,8 @@
 #hero {
     background-color: #ffffff; /* Blue */
     color: #000000; /* White */
-    padding: 3rem 0; /* Add padding to the top and bottom */
     text-align: center; 
-    padding-top: 150px; /* Add padding to the top */
+    padding-top: 100px; /* Add padding to the top */
     width: 100vw; /* Make the section fit the width of the viewport */
   }
   
