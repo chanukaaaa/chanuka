@@ -1,11 +1,6 @@
 import React from "react";
 import "../css/projects.css";
 import cardImage1 from "../assets/thumbnails/project1_thumbnail.jpeg";
-import cardImage2 from "../assets/project/project-two.png";
-import cardImage3 from "../assets/project/project-three.png";
-import cardImage4 from "../assets/project/project-four.png";
-import cardImage5 from "../assets/project/project-five.png";
-import cardImage6 from "../assets/project/project-six.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import Button from "@mui/material/Button";
@@ -25,176 +20,79 @@ const Projects = () => {
       </div>
 
       <article className="project">
-        {/* First Row */}
-        <div className="row">
-          {/* First Card */}
-          <div className="card">
-            <img className="card-image" src={cardImage1} alt="Card Image" />
-            <div className="project-info">
-              <div className="project-bio">
-                <h3>Project One</h3>
-                <p>React, Redux, SASS</p>
+        <div className="slider">
+          <div className="slide">
+            <div className="card">
+              <img className="card-image" src={cardImage1} alt="Card Image" />
+              <div className="project-info">
+                <div className="project-bio">
+                  <h3>Project One</h3>
+                  <p>React, Redux, SASS</p>
+                </div>
+                <div className="project-link">
+                  <a href="https://github.com/chanukaaaa" target="_blank">
+                    <GitHubIcon />
+                  </a>
+                  <a href="#" target="_blank">
+                    <LanguageIcon />
+                  </a>
+                </div>
               </div>
-              <div className="project-link">
-                <a href="https://github.com/chanukaaaa" target="_blank">
-                  <GitHubIcon />
-                </a>
-                <a href="#" target="_blank">
-                  <LanguageIcon />
-                </a>
+              <div className="buttons1">
+                <Button className="btn" variant="contained" color="secondary">
+                  Read more
+                </Button>
               </div>
-            </div>
-            <br />
-            <br />
-            <br />
-            <div className="buttons1">
-              <Button className="btn" variant="contained" color="secondary">
-                Read more
-              </Button>
             </div>
           </div>
-
-          {/* Second Card */}
           <div className="card">
-            <img className="card-image" src={cardImage1} alt="Card Image" />
-            <div className="project-info">
-              <div className="project-bio">
-                <h3>Project One</h3>
-                <p>React, Redux, SASS</p>
+              <img className="card-image" src={cardImage1} alt="Card Image" />
+              <div className="project-info">
+                <div className="project-bio">
+                  <h3>Project One</h3>
+                  <p>React, Redux, SASS</p>
+                </div>
+                <div className="project-link">
+                  <a href="https://github.com/chanukaaaa" target="_blank">
+                    <GitHubIcon />
+                  </a>
+                  <a href="#" target="_blank">
+                    <LanguageIcon />
+                  </a>
+                </div>
               </div>
-              <div className="project-link">
-                <a href="https://github.com/chanukaaaa" target="_blank">
-                  <GitHubIcon />
-                </a>
-                <a href="#" target="_blank">
-                  <LanguageIcon />
-                </a>
-              </div>
-            </div>
-            <br />
-            <br />
-            <br />
-            <div className="buttons1">
-              <Button className="btn" variant="contained" color="secondary">
-                Read more
-              </Button>
-            </div>
-          </div>
-
-          {/* Third Card */}
-          <div className="card">
-            <img className="card-image" src={cardImage1} alt="Card Image" />
-            <div className="project-info">
-              <div className="project-bio">
-                <h3>Project One</h3>
-                <p>React, Redux, SASS</p>
-              </div>
-              <div className="project-link">
-                <a href="https://github.com/chanukaaaa" target="_blank">
-                  <GitHubIcon />
-                </a>
-                <a href="#" target="_blank">
-                  <LanguageIcon />
-                </a>
+              <div className="buttons1">
+                <Button className="btn" variant="contained" color="secondary">
+                  Read more
+                </Button>
               </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <div className="buttons1">
-              <Button className="btn" variant="contained" color="secondary">
-                Read more
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        {/* Second Row */}
-        <div className="row">
-          {/* Fourth Card */}
-          <div className="card">
-            <img className="card-image" src={cardImage1} alt="Card Image" />
-            <div className="project-info">
-              <div className="project-bio">
-                <h3>Project One</h3>
-                <p>React, Redux, SASS</p>
+            <div className="card">
+              <img className="card-image" src={cardImage1} alt="Card Image" />
+              <div className="project-info">
+                <div className="project-bio">
+                  <h3>Project One</h3>
+                  <p>React, Redux, SASS</p>
+                </div>
+                <div className="project-link">
+                  <a href="https://github.com/chanukaaaa" target="_blank">
+                    <GitHubIcon />
+                  </a>
+                  <a href="#" target="_blank">
+                    <LanguageIcon />
+                  </a>
+                </div>
               </div>
-              <div className="project-link">
-                <a href="https://github.com/chanukaaaa" target="_blank">
-                  <GitHubIcon />
-                </a>
-                <a href="#" target="_blank">
-                  <LanguageIcon />
-                </a>
+              <div className="buttons1">
+                <Button className="btn" variant="contained" color="secondary">
+                  Read more
+                </Button>
               </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <div className="buttons1">
-              <Button className="btn" variant="contained" color="secondary">
-                Read more
-              </Button>
-            </div>
-          </div>
-          {/* Fifth Card */}
-          <div className="card">
-            <img className="card-image" src={cardImage1} alt="Card Image" />
-            <div className="project-info">
-              <div className="project-bio">
-                <h3>Project One</h3>
-                <p>React, Redux, SASS</p>
-              </div>
-              <div className="project-link">
-                <a href="https://github.com/chanukaaaa" target="_blank">
-                  <GitHubIcon />
-                </a>
-                <a href="#" target="_blank">
-                  <LanguageIcon />
-                </a>
-              </div>
-            </div>
-            <br />
-            <br />
-            <br />
-            <div className="buttons1">
-              <Button className="btn" variant="contained" color="secondary">
-                Read more
-              </Button>
-            </div>
-          </div>
-          {/* Sixth Card */}
-          <div className="card">
-            <img className="card-image" src={cardImage1} alt="Card Image" />
-            <div className="project-info">
-              <div className="project-bio">
-                <h3>Project One</h3>
-                <p>React, Redux, SASS</p>
-              </div>
-              <div className="project-link">
-                <a href="https://github.com/chanukaaaa" target="_blank">
-                  <GitHubIcon />
-                </a>
-                <a href="#" target="_blank">
-                  <LanguageIcon />
-                </a>
-              </div>
-            </div>
-            <br />
-            <br />
-            <br />
-            <div className="buttons1">
-              <Button className="btn" variant="contained" color="secondary">
-                Read more
-              </Button>
-            </div>
-          </div>
+            
+          {/* Add more cards here */}
         </div>
       </article>
-
-      <Button className="button2">
-        <span>See more...</span>
-      </Button>
     </section>
   );
 };

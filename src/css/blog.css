@@ -1,5 +1,6 @@
 /* Slider */
 .blog-slider {
+    padding-top: 50px;
     background-color: #fff;
     color: #000;
     position: relative;
@@ -33,11 +34,11 @@
 }
 
 .prev-btn {
-    left: 100px;
+    left: 20px; /* Adjust position for smaller screens */
 }
 
 .next-btn {
-    right: 100px;
+    right: 20px; /* Adjust position for smaller screens */
 }
 
 /* Modal */
@@ -59,7 +60,7 @@
     color: #000; /* Black font */
     padding: 20px;
     border-radius: 8px;
-    max-width: 80%;
+    width: 80%; /* Adjust width for smaller screens */
     max-height: 80%;
     overflow-y: auto;
 }

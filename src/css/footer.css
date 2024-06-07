@@ -1,46 +1,60 @@
 #footer {
-    background-color: #333333; /* Blue */
-    color: #ffffff; /* White */
-    padding: 3rem 0; /* Add padding to the top and bottom */
-    text-align: center; /* Center the content */
+  background-color: #333333; /* Blue */
+  color: #ffffff; /* White */
+  padding: 3rem 0; /* Add padding to the top and bottom */
+  text-align: center; /* Center the content */
+}
+
+#footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer a {
+  color: #ffffff; /* White */
+  margin: 0 0.5rem; /* Add margin between social icons */
+}
+
+#footer .social img {
+  width: 30px; /* Increase icon size for better visibility */
+  height: 30px;
+}
+
+#footer p {
+  margin-top: 1rem; /* Add margin between social icons and copyright text */
+}
+
+.icon-container {
+  margin: 10px;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center items horizontally */
+}
+
+.icon {
+  width: 40px; /* Set the width of the icons */
+  height: 40px; /* Set the height of the icons */
+  margin-right: 10px; /* Add some space between the icons */
+  border-radius: 50%; /* Make the icons circular */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the icons */
+}
+
+.icon:hover {
+  opacity: 0.8; /* Reduce the opacity of the icons when hovered over */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  #footer {
+    padding: 2rem 0; /* Reduce padding for smaller screens */
   }
-  
-  #footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #footer a {
-    color: #ffffff; /* White */
-    margin: 0 0.5rem; /* Add margin between social icons */
-  }
-  
-  #footer .social img {
-    width: 30px; /* Increase icon size for better visibility */
+
+  .icon {
+    width: 30px; /* Decrease icon size for smaller screens */
     height: 30px;
   }
-  
-  #footer p {
-    margin-top: 1rem; /* Add margin between social icons and copyright text */
+
+  #footer .container {
+    margin: 0 1rem; /* Add margin to the sides for smaller screens */
   }
-  
-  .icon-container {
-    margin: 10px;
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center items horizontally */
-  }
-  
-  .icon {
-    width: 40px; /* Set the width of the icons */
-    height: 40px; /* Set the height of the icons */
-    margin-right: 10px; /* Add some space between the icons */
-    border-radius: 50%; /* Make the icons circular */
-    cursor: pointer; /* Change the cursor to a pointer when hovering over the icons */
-  }
-  
-  .icon:hover {
-    opacity: 0.8; /* Reduce the opacity of the icons when hovered over */
-  }
-  
-  
+}

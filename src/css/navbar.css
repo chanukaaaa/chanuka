@@ -1,4 +1,5 @@
 /* Navbar.css */
+
 .navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
@@ -79,9 +80,11 @@
     right: 0;
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0; /* Adjust padding */
   }
 
   .nav-menu.active li {
-    margin: 10px;
+    margin: 10px 0; /* Adjust margin */
+    text-align: center; /* Center align items */
   }
 }
