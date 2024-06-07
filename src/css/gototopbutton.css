@@ -1,0 +1,25 @@
+.go-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .scroll-to-top {
+    background-color: #000; /* Transparent background */
+    color: #fff; /* Black text */
+    border: 2px solid #000; /* Black border */
+    border-radius: 50%;
+    padding: 9px 12px; /* Adjust padding for smaller button */
+    cursor: pointer;
+    font-size: 16px; /* Smaller font size */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #000; /* Black background on hover */
+    border-color: #fff; /* White border on hover */
+    color: #fff; /* White text on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  

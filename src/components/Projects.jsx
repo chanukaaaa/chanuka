@@ -9,7 +9,7 @@ import cardImage6 from "../assets/project/project-six.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import Button from "@mui/material/Button";
-import { useTheme } from "../components/ThemeContext "; // Import useTheme hook
+import { useTheme } from "./ThemeContext"; // Import useTheme hook
 
 const Projects = () => {
   const { isDarkMode } = useTheme(); // Use useTheme hook to access theme state
