@@ -9,7 +9,8 @@ const Blog = () => {
       topic: "Article 1",
       bannerImage: "url_to_image_1.jpg",
       shortDescription: "Short description of article 1.",
-      fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel gravida tellus. Cras id augue vestibulum, interdum tortor eget, vehicula lorem. Phasellus in fermentum nulla. Quisque tincidunt tellus in ante consectetur, eget fermentum felis hendrerit. Nam euismod nunc nec erat pulvinar dictum. Duis et turpis urna. Quisque accumsan lacus eros, nec vehicula turpis pharetra et. Fusce tempor libero eget rhoncus pellentesque. Vivamus id neque ut nulla ullamcorper posuere vel at urna. Nulla ut diam non sem dictum iaculis. Nam ac sapien sed lorem venenatis vehicula. Curabitur sagittis consequat sapien sit amet tempor. Donec varius, nulla in tincidunt convallis, mauris magna eleifend justo, et viverra nulla lectus eget velit. Maecenas sed accumsan lorem. Sed ultrices, sapien nec faucibus consectetur, ipsum metus dictum velit, id viverra dolor felis eu nisl.",
+      fullDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel gravida tellus. Cras id augue vestibulum, interdum tortor eget, vehicula lorem. Phasellus in fermentum nulla. Quisque tincidunt tellus in ante consectetur, eget fermentum felis hendrerit. Nam euismod nunc nec erat pulvinar dictum. Duis et turpis urna. Quisque accumsan lacus eros, nec vehicula turpis pharetra et. Fusce tempor libero eget rhoncus pellentesque. Vivamus id neque ut nulla ullamcorper posuere vel at urna. Nulla ut diam non sem dictum iaculis. Nam ac sapien sed lorem venenatis vehicula. Curabitur sagittis consequat sapien sit amet tempor. Donec varius, nulla in tincidunt convallis, mauris magna eleifend justo, et viverra nulla lectus eget velit. Maecenas sed accumsan lorem. Sed ultrices, sapien nec faucibus consectetur, ipsum metus dictum velit, id viverra dolor felis eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel gravida tellus. Cras id augue vestibulum, interdum tortor eget, vehicula lorem. Phasellus in fermentum nulla. Quisque tincidunt tellus in ante consectetur, eget fermentum felis hendrerit. Nam euismod nunc nec erat pulvinar dictum. Duis et turpis urna. Quisque accumsan lacus eros, nec vehicula turpis pharetra et. Fusce tempor libero eget rhoncus pellentesque. Vivamus id neque ut nulla ullamcorper posuere vel at urna. Nulla ut diam non sem dictum iaculis. Nam ac sapien sed lorem venenatis vehicula. Curabitur sagittis consequat sapien sit amet tempor. Donec varius, nulla in tincidunt convallis, mauris magna eleifend justo, et viverra nulla lectus eget velit. Maecenas sed accumsan lorem. Sed ultrices, sapien nec faucibus consectetur, ipsum metus dictum velit, id viverra dolor felis eu nisl.",
+      
       linkedinLink: "linkedin_post_link_1",
     },
     {
@@ -80,10 +81,6 @@ const Blog = () => {
             <img src={article.bannerImage} alt={article.topic} />
             <p>{article.shortDescription}</p>
             <button className="see-more-btn" onClick={() => handleSeeMore(article)}>See More</button>
-            <br/>
-            <a href={article.linkedinLink} target="_blank" rel="noopener noreferrer">
-              Visit LinkedIn Post
-            </a>
           </div>
         ))}
         <button className="prev-btn" onClick={handlePrevSlide}>
