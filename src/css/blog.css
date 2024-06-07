@@ -1,0 +1,87 @@
+/* Slider */
+.blog-slider {
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-bottom: 50px;
+}
+
+.blog-slide {
+    display: none;
+}
+
+.blog-slide.active {
+    display: block;
+}
+
+.prev-btn,
+.next-btn {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 100px;
+}
+
+.next-btn {
+    right: 100px;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* White with some transparency */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff; /* White background */
+    color: #000; /* Black font */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* See More Button */
+.see-more-btn {
+    background-color: transparent;
+    border: none; /* Remove the border */
+    border-radius: 25px; /* Add border radius */
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none; /* Remove outline */
+}
+
+.see-more-btn:hover {
+    background-color: black;
+    color: white;
+}
