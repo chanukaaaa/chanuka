@@ -1,119 +1,131 @@
-.card {
-  margin: 10px;
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 350px;
-  color: #000;
+.projects-container {
+  padding: 20px;
+  text-align: center;
 }
 
-.card-image {
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
 }
 
-.project-info {
-  text-align: center;
+.project-content {
+  padding: 10px;
+  text-align: left;
 }
 
-.slider {
+.project-content h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.project-content p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.project-buttons {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: auto;
 }
 
-.slide {
-  scroll-snap-align: start;
+.project-buttons button,
+.project-buttons a {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9em;
 }
 
-.project-link {
-  position: absolute;
-  bottom: 15px;
-  right: 10px;
-  display: flex;
-  gap: 10px;
+.project-buttons button:hover,
+.project-buttons a:hover {
+  background-color: #0056b3;
 }
 
-.buttons1 {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+.project-buttons a {
+  margin-left: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  align-items: center;
 }
 
-.buttons1 .btn {
-  background-color: transparent;
-  border: none;
-  border-radius: 25px;
-  color: black;
-  transition: background-color 0.3s, color 0.3s;
-  outline: none;
-}
-
-.buttons1 .btn:hover {
-  background-color: black;
-  color: white;
-}
-
-.button2 {
-  border-radius: 25px;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #000000;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  font-size: 17px;
-  padding: 16px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button2 span {
-  cursor: pointer;
-  display: inline-block;
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
   position: relative;
-  transition: 0.5s;
+  text-align: left;
 }
 
-.button2 span:after {
-  content: '»';
+.modal-content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.close-button {
   position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -15px;
-  transition: 0.5s;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
-.button2:hover span {
-  padding-right: 15px;
+.see-more-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.button2:hover span:after {
-  opacity: 1;
-  right: 0;
+.see-more-button:hover {
+  background-color: #218838;
 }
 
-/* Media query for mobile devices */
+/* Responsive design */
 @media (max-width: 768px) {
-  .card {
-    width: 100%; /* Set width to 100% for responsiveness */
-    height: auto; /* Allow height to adjust according to content */
-    max-width: 300px; /* Set maximum width for better readability */
-  }
-
-  .project-link,
-  .buttons1 {
-    position: relative; /* Remove absolute positioning for better display on mobile */
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+  .project-card {
+      width: calc(100% - 20px);
   }
 }

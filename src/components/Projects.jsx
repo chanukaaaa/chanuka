@@ -1,100 +1,106 @@
-import React from "react";
-import "../css/projects.css";
-import cardImage1 from "../assets/thumbnails/project1_thumbnail.jpeg";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LanguageIcon from "@mui/icons-material/Language";
-import Button from "@mui/material/Button";
-import { useTheme } from "./ThemeContext"; // Import useTheme hook
+import React, { useState } from 'react';
+import '../css/projects.css';
+
+const projectsData = [
+    {
+        id: 1,
+        title: 'Project One',
+        description: 'This is a short description of project one.',
+        fullDescription: 'This is the full description of project one. It includes more details about the project.',
+        imageUrl: 'path/to/image1.jpg',
+        linkedinUrl: 'https://www.linkedin.com/in/yourprofile',
+        githubUrl: 'https://github.com/yourprofile/project-one'
+    },
+    {
+        id: 2,
+        title: 'Project Two',
+        description: 'This is a short description of project two.',
+        fullDescription: 'This is the full description of project two. It includes more details about the project.',
+        imageUrl: 'path/to/image2.jpg',
+        linkedinUrl: 'https://www.linkedin.com/in/yourprofile',
+        githubUrl: 'https://github.com/yourprofile/project-two'
+    },
+    {
+        id: 3,
+        title: 'Project Three',
+        description: 'This is a short description of project three.',
+        fullDescription: 'This is the full description of project three. It includes more details about the project.',
+        imageUrl: 'path/to/image3.jpg',
+        linkedinUrl: 'https://www.linkedin.com/in/yourprofile',
+        githubUrl: 'https://github.com/yourprofile/project-three'
+    },
+    {
+        id: 4,
+        title: 'Project Four',
+        description: 'This is a short description of project four.',
+        fullDescription: 'This is the full description of project four. It includes more details about the project.',
+        imageUrl: 'path/to/image4.jpg',
+        linkedinUrl: 'https://www.linkedin.com/in/yourprofile',
+        githubUrl: 'https://github.com/yourprofile/project-four'
+    },
+    {
+        id: 5,
+        title: 'Project Five',
+        description: 'This is a short description of project five.',
+        fullDescription: 'This is the full description of project five. It includes more details about the project.',
+        imageUrl: 'path/to/image5.jpg',
+        linkedinUrl: 'https://www.linkedin.com/in/yourprofile',
+        githubUrl: 'https://github.com/yourprofile/project-five'
+    },
+    {
+        id: 6,
+        title: 'Project Six',
+        description: 'This is a short description of project six.',
+        fullDescription: 'This is the full description of project six. It includes more details about the project.',
+        imageUrl: 'path/to/image6.jpg',
+        linkedinUrl: 'https://www.linkedin.com/in/yourprofile',
+        githubUrl: 'https://github.com/yourprofile/project-six'
+    },
+];
 
 const Projects = () => {
-  const { isDarkMode } = useTheme(); // Use useTheme hook to access theme state
-  return (
-    <section
-      id="projects"
-      className={`project-container container ${isDarkMode ? "dark" : "light"}`}
-    >
-      <div className="division"></div>
-      <div className="content-text">
-        <h1>Projects</h1>
-        <p>Check out some of my personal projects</p>
-      </div>
+    const [modalContent, setModalContent] = useState(null);
 
-      <article className="project">
-        <div className="slider">
-          <div className="slide">
-            <div className="card">
-              <img className="card-image" src={cardImage1} alt="Card Image" />
-              <div className="project-info">
-                <div className="project-bio">
-                  <h3>Project One</h3>
-                  <p>React, Redux, SASS</p>
-                </div>
-                <div className="project-link">
-                  <a href="https://github.com/chanukaaaa" target="_blank">
-                    <GitHubIcon />
-                  </a>
-                  <a href="#" target="_blank">
-                    <LanguageIcon />
-                  </a>
-                </div>
-              </div>
-              <div className="buttons1">
-                <Button className="btn" variant="contained" color="secondary">
-                  Read more
-                </Button>
-              </div>
+    const openModal = (project) => {
+        setModalContent(project);
+    };
+
+    const closeModal = () => {
+        setModalContent(null);
+    };
+
+    return (
+        <div className="projects-container">
+            <h2>My Projects</h2>
+            <div className="projects-grid">
+                {projectsData.map((project) => (
+                    <div className="project-card" key={project.id}>
+                        <img src={project.imageUrl} alt={project.title} />
+                        <div className="project-content">
+                            <h3>{project.title}</h3>
+                            <p>{project.description}</p>
+                        </div>
+                        <div className="project-buttons">
+                            <button onClick={() => openModal(project)}>Read More</button>
+                            <a href={project.linkedinUrl} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                ))}
             </div>
-          </div>
-          <div className="card">
-              <img className="card-image" src={cardImage1} alt="Card Image" />
-              <div className="project-info">
-                <div className="project-bio">
-                  <h3>Project One</h3>
-                  <p>React, Redux, SASS</p>
+            {modalContent && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="close-button" onClick={closeModal}>&times;</span>
+                        <img src={modalContent.imageUrl} alt={modalContent.title} />
+                        <h2>{modalContent.title}</h2>
+                        <p>{modalContent.fullDescription}</p>
+                    </div>
                 </div>
-                <div className="project-link">
-                  <a href="https://github.com/chanukaaaa" target="_blank">
-                    <GitHubIcon />
-                  </a>
-                  <a href="#" target="_blank">
-                    <LanguageIcon />
-                  </a>
-                </div>
-              </div>
-              <div className="buttons1">
-                <Button className="btn" variant="contained" color="secondary">
-                  Read more
-                </Button>
-              </div>
-            </div>
-            <div className="card">
-              <img className="card-image" src={cardImage1} alt="Card Image" />
-              <div className="project-info">
-                <div className="project-bio">
-                  <h3>Project One</h3>
-                  <p>React, Redux, SASS</p>
-                </div>
-                <div className="project-link">
-                  <a href="https://github.com/chanukaaaa" target="_blank">
-                    <GitHubIcon />
-                  </a>
-                  <a href="#" target="_blank">
-                    <LanguageIcon />
-                  </a>
-                </div>
-              </div>
-              <div className="buttons1">
-                <Button className="btn" variant="contained" color="secondary">
-                  Read more
-                </Button>
-              </div>
-            </div>
-            
-          {/* Add more cards here */}
+            )}
+            <button className="see-more-button" onClick={() => window.location.href='/projects'}>See More</button>
         </div>
-      </article>
-    </section>
-  );
+    );
 };
 
 export default Projects;
