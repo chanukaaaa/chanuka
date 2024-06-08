@@ -7,7 +7,7 @@ const projectsData = [
         title: 'Project One',
         description: 'This is a short description of project one.',
         fullDescription: 'This is the full description of project one. It includes more details about the project.',
-        imageUrl: 'path/to/image1.jpg',
+        imageUrl: '../assets/thumbnails/project1_thumbnail.jpeg',
         linkedinUrl: 'https://www.linkedin.com/in/yourprofile',
         githubUrl: 'https://github.com/yourprofile/project-one'
     },

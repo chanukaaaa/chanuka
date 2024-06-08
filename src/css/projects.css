@@ -52,19 +52,21 @@
 
 .project-buttons button,
 .project-buttons a {
-  padding: 10px 15px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 0.9em;
+  background-color: transparent;
+    border: 2px solid black; /* Add black border */
+    border-radius: 25px; /* Adjust border radius for smaller button */
+    color: black;
+    padding: 8px 16px; /* Adjust padding for smaller button */
+    font-size: 14px; /* Adjust font size */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add border-color transition */
+    outline: none; /* Remove outline */
 }
 
 .project-buttons button:hover,
 .project-buttons a:hover {
-  background-color: #0056b3;
+  background-color: black;
+    color: white;
+    border-color: transparent; /* Change border color on hover */
 }
 
 .project-buttons a {
